@@ -1,0 +1,557 @@
+@charset "UTF-8";
+.ai_rmd .left {
+  display: block;
+  width: 260px;
+  height: 460px;
+  float: left;
+  overflow: hidden;
+}
+
+.ai_rmd .left #chartdiv {
+  width: 100%;
+  height: 460px;
+}
+
+.ai_rmd .right {
+  display: block;
+  float: left;
+  width: calc(100% - 260px);
+  height: 435px;
+}
+
+.ai_rmd .right .itemRmdBox_w {
+  position: relative;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 30px;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox {
+  display: block;
+  width: 100%;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info {
+  display: block;
+  width: 100%;
+  height: 155px;
+  float: left;
+  overflow: hidden;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .thumb {
+  display: block;
+  float: left;
+  width: 127px;
+  height: 153px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  padding: 5px 0 0 0;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .thumb span {
+  font-size: 12px;
+  color: #333;
+  font-weight: 300;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .thumb span em {
+  display: block;
+  font-style: normal;
+  font-size: 18px;
+  color: #3e72ed;
+  font-weight: 700;
+  padding: 5px 0 10px 0;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info {
+  position: relative;
+  display: block;
+  width: calc(100% - 127px);
+  padding: 10px 0 0 20px;
+  float: left;
+  overflow: hidden;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info .title {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info .title strong {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info .con {
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info .con span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  font-size: 15px;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info .date {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_info .info .date span {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+
+.itemInfo {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #f6f6f6;
+  padding: 0 15px;
+  margin: 20px 0 0 0;
+  border-radius: 5px;
+  float: left;
+  overflow: hidden;
+  clear: both;
+}
+
+.itemInfo dl {
+  display: block;
+}
+
+.itemInfo dl dt {
+  display: block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.itemInfo dl dd {
+  display: block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.ai_rmd .right .itemRmdBox_w .itemRmdBox .rmdBox .rmd_graph {
+  display: block;
+  width: 100%;
+  height: 220px;
+  margin-top: 20px;
+  float: left;
+  background: #f8f8f8;
+}
+
+.rmd_bot_tabw .nav {
+  border-bottom: 0;
+}
+
+.rmd_bot_tabw .nav li {
+  width: auto;
+  height: 32px;
+  padding-right: 30px;
+}
+
+.rmd_bot_tabw .nav li:last-child {
+  padding-right: 0;
+}
+
+.rmd_bot_tabw .nav li:first-child::before {
+  content: '';
+  padding-right: 0;
+}
+
+.rmd_bot_tabw .nav li::before {
+  content: '│';
+  line-height: 17px;
+  font-size: 15px;
+  color: #666;
+  padding: 2px 30px 0 0;
+  float: left;
+}
+
+.rmd_bot_tabw .nav li.active a {
+  border: 0;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 3px solid #333;
+}
+
+.rmd_bot_tabw .nav li a {
+  padding: 0 0 17px 0;
+  margin: 0;
+  line-height: 17px;
+  font-size: 15px;
+  color: #666;
+  font-weight: 300;
+  float: left;
+}
+
+.rmd_bot_tabw .nav li a:hover {
+  border: 0;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 3px solid #333;
+  background: none;
+}
+
+.rmd_bot_tabw .tab-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.rmd_bot_tabw .tab-content .tab-pane {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rmd_bot_tabw .tab-content .tab-pane p {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.rmd_bot_tabw .tab-content .tab-pane dl {
+  display: block;
+  overflow: hidden;
+}
+
+.rmd_bot_tabw .tab-content .tab-pane dl dt {
+  display: block;
+  width: 120px;
+  margin: 0 0 20px 0;
+  float: left;
+  clear: left;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  color: #333;
+  font-weight: 700;
+  text-align: left;
+  text-indent: 5px;
+}
+
+.rmd_bot_tabw .tab-content .tab-pane dl dd {
+  display: block;
+  margin: 0 0 20px 0;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  float: left;
+}
+
+.rmd_bot_tabw .tab-content .tab-pane dl dd label {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  float: left;
+  padding-right: 15px;
+}
+
+.rmd_bot_tabw .rmd-bot-sch {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: calc(100% - 2px);
+  height: 44px;
+  line-height: 43px;
+  border-top: 1px solid #d7d7d7;
+  text-align: center;
+}
+
+.rmd_bot_tabw .rmd-bot-sch button {
+  border: 0;
+  outline: 0;
+  background: none;
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 300;
+}
+
+.rmd_bot_tabw .rmd-bot-sch button span {
+  padding: 0 3px;
+}
+
+.rmd-bot-top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 65px;
+  line-height: 65px;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0 35px;
+}
+
+.rmd-bot-top strong {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.rmd-bot-top .close {
+  margin-top: 25px;
+}
+
+.rmd-bot-cont {
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.rmd-bot-cont .left {
+  display: block;
+  width: 220px;
+  height: 200px;
+  float: left;
+  background: #f6f6f6;
+}
+
+.rmd-bot-cont .left .bot {
+  display: block;
+  width: 100%;
+  height: 230px;
+  text-align: center;
+  float: left;
+}
+
+.rmd-bot-cont .left .bot .name {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rmd-bot-cont .left .bot .name a:hover {
+  text-decoration: none;
+}
+
+.rmd-bot-cont .left .bot .name em {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.rmd-bot-cont .left .bot .name strong {
+  display: block;
+  font-size: 24px;
+  color: #3e72ed;
+  font-weight: 700;
+}
+
+.rmd-bot-cont .left .bot .thumb {
+  margin-top: 10px;
+}
+
+.rmd-bot-cont .left .info {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+.rmd-bot-cont .left .info dl {
+  padding: 0 25px;
+}
+
+.rmd-bot-cont .left .info dl dt {
+  width: 105px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  float: left;
+  clear: left;
+  margin-bottom: 8px;
+}
+
+.rmd-bot-cont .left .info dl dt:last-child {
+  margin-bottom: 0;
+}
+
+.rmd-bot-cont .left .info dl dd {
+  width: calc(100% - 105px);
+  margin-left: 0;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+  float: left;
+  margin-bottom: 8px;
+}
+
+.rmd-bot-cont .left .info dl dd:last-child {
+  margin-bottom: 0;
+}
+
+.rmd-bot-cont .right {
+  display: block;
+  width: 738px;
+  height: 200px;
+  float: left;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.rmd-bot-cont .right .info dl {
+  display: block;
+  width: 100%;
+}
+
+.rmd-bot-cont .right .info dl dt {
+  width: 125px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  float: left;
+  clear: left;
+}
+
+.rmd-bot-cont .right .info dl dd {
+  width: 570px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 16px;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.rmd-bot-cont .right .info {
+  display: block;
+  overflow: hidden;
+}
+
+.rmd-bot-cont .graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  float: left;
+}
+
+.rmd-bot-cont .graph .graph-box {
+  display: block;
+  width: calc(50% - 15px);
+}
+
+.bot-sch-w {
+  position: relative;
+}
+
+.schItemBox {
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+.schItemBox .left {
+  display: block;
+  width: 200px;
+  min-height: 430px;
+  height: 100%;
+  background: #f5f5f5;
+  padding: 25px;
+  float: left;
+}
+
+.rankList li {
+  display: block;
+  padding-bottom: 20px;
+  overflow: hidden;
+  clear: left;
+}
+
+.rankList li .num {
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  padding-right: 3px;
+}
+
+.rankList li .txt {
+  display: block;
+  float: left;
+}
+
+.rankList li .txt a strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+}
+
+.rankList li .txt span {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+  padding-top: 10px;
+}
+
+.schItemBox .right {
+  display: block;
+  width: 720px;
+  min-height: 430px;
+  background: #f5f5f5;
+  float: right;
+}

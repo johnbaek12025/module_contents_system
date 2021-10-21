@@ -1,0 +1,98 @@
+#footer_w {
+  min-height: 280px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+#footer_w #realfooter {
+  position: relative;
+  width: 1030px;
+  margin: 0 auto;
+}
+
+#footer_w #realfooter .fmenu {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#footer_w #realfooter .fmenu ul {
+  display: block;
+}
+
+#footer_w #realfooter .fmenu ul li {
+  display: inline-block;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  border-left: 1px solid #b4b4b4;
+  margin-left: 19px;
+  padding-left: 20px;
+}
+
+#footer_w #realfooter .fmenu ul li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#footer_w #realfooter .fmenu ul li a {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#footer_w #realfooter .fsite {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+#footer_w #realfooter .fsite button {
+  width: 160px;
+  height: 34px;
+  background: #f6f6f7;
+  text-align: left;
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+}
+
+#footer_w #realfooter .fsite button .caret {
+  float: right;
+  margin-top: 8px;
+}
+
+#footer_w #realfooter .fsite li a:hover {
+  background: #1c3a81;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3e72ed), color-stop(43%, #668dec), to(#82a7ff));
+  background: linear-gradient(0deg, #3e72ed 0%, #668dec 43%, #82a7ff 100%);
+  color: #fff;
+}
+
+#footer_w #realfooter address {
+  display: block;
+  margin-top: 15px;
+}
+
+#footer_w #realfooter address p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
+  font-weight: 300;
+}
+
+#footer_w #realfooter address p em {
+  color: #333;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#footer_w #realfooter address p .copy {
+  display: block;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+}

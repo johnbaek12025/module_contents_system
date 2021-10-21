@@ -1,0 +1,52 @@
+.mpa .info {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mpa .info span {
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+.mpa .chartbox {
+  display: block;
+  width: 100%;
+  min-height: 225px;
+  margin-top: 10px;
+}
+
+.idsView {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.idsView li {
+  display: block;
+  float: left;
+}
+
+.idsView li.active a {
+  color: #3e72ed;
+  font-weight: 500;
+}
+
+.idsView li::before {
+  content: '|';
+  color: #d7d7d7;
+  padding: 0 15px;
+}
+
+.idsView li:first-child::before {
+  content: '';
+  padding: 0;
+}
+
+.idsView li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  cursor: pointer;
+}

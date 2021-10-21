@@ -1,0 +1,951 @@
+@charset "UTF-8";
+.board_view_info {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  float: left;
+  overflow: hidden;
+}
+
+.board_view_info .view_title {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.board_view_info .view_title strong {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.board_view_info > .info {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+
+.board_view_info > .info .left {
+  display: block;
+  width: 50%;
+  float: left;
+  cursor: pointer;
+}
+
+.board_view_info > .info .left .lev {
+  display: block;
+  float: left;
+}
+
+.board_view_info > .info .left .lev::after {
+  content: '│';
+  font-size: 14px;
+  color: #dfdfdf;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.board_view_info > .info .left .lev span {
+  display: block;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+.board_view_info > .info .left .lev span.ico_cl01 {
+  background-position: 0 0;
+}
+
+.board_view_info > .info .left .lev span.ico_cl02 {
+  background-position: 0 -22px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl03 {
+  background-position: 0 -44px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl04 {
+  background-position: 0 -66px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl05 {
+  background-position: 0 -88px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl06 {
+  background-position: 0 -110px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl07 {
+  background-position: 0 -132px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl08 {
+  background-position: 0 -154px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl09 {
+  background-position: 0 -176px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl10 {
+  background-position: 0 -198px;
+}
+
+.board_view_info > .info .left .lev span.label {
+  width: 22px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  background-image: url(../img/sub/board/user.png);
+  background-repeat: no-repeat;
+}
+
+.board_view_info > .info .left .user_info {
+  display: block;
+  float: left;
+  line-height: 22px;
+}
+
+.board_view_info > .info .left .user_info span {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.board_view_info > .info .left .user_info span.user_nick {
+  color: #333;
+}
+
+.board_view_info > .info .left .user_info a {
+  display: inline-block;
+  font-size: 13px;
+  color: #3e72ed;
+  text-decoration: underline;
+}
+
+.board_view_info > .info .right {
+  display: block;
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.board_view_info > .info .right .basic-info {
+  display: inline-block;
+  line-height: 22px;
+  padding-right: 25px;
+}
+
+.board_view_info > .info .right .basic-info .viewCount {
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.board_view_info > .info .right .basic-info .viewCount em {
+  font-style: normal;
+  color: #999;
+}
+
+.board_view_info > .info .right .basic-info .viewCount::after {
+  content: '│';
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #dfdfdf;
+}
+
+.board_view_info > .info .right .basic-info .writeDate {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.board_view_info > .info .right .modify-info {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.board_view_content {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  border-top: 1px solid #d7d7d7;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+.board_view_content .viewContent {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #666;
+  font-weight: 300;
+  padding: 80px 0 100px 0;
+}
+
+.board_view_content .vote {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.board_view_content .vote ul {
+  display: inline-block;
+}
+
+.board_view_content .vote ul li {
+  display: inline-block;
+  width: 80px;
+  padding: 15px 0;
+  margin: 0 7px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.board_view_content .vote ul li.approve .count {
+  color: #fc2f2f;
+}
+
+.board_view_content .vote ul li.oppose .count {
+  color: #3e72ed;
+}
+
+.board_view_content .vote ul li .count {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.board_view_content .vote ul li .text {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  padding-top: 10px;
+}
+
+.board_view_content .adText {
+  display: block;
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.board_view_content .adText span {
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 300;
+  padding-right: 15px;
+}
+
+.board_view_content .adText a {
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.board_view_content .share {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.board_view_content .share > button {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background: #f7f7f7;
+  border: 1px solid #d7d7d7;
+  border-radius: 34px;
+}
+
+.board_view_content .file {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.board_view_content .file dt {
+  width: 72px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  height: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.board_view_content .file dd {
+  margin-left: 75px;
+  height: 18px;
+  line-height: 14px;
+  padding: 0;
+}
+
+.board_view_content .file dd a {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+  text-decoration: underline;
+  padding-right: 5px;
+}
+
+.board_view_content .file dd a:last-child::after {
+  content: '';
+}
+
+.board_view_content .file dd a::after {
+  content: ',';
+}
+
+.operationjuror {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.operationjuror dl {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.operationjuror dl dt {
+  display: block;
+  float: left;
+}
+
+.operationjuror dl dt .txt {
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+.operationjuror dl dt .label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: #333;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  padding: 0;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.operationjuror dl dd {
+  display: block;
+  float: left;
+}
+
+.operationjuror dl dd ul {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.operationjuror dl dd ul li {
+  display: block;
+  margin-right: 5px;
+  float: left;
+}
+
+.operationjuror dl dd ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+  border: 1px solid #d7d7d7;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.operationjuror dl dd ul li a:focus {
+  text-decoration: none;
+}
+
+.operationjuror dl dd ul li a:visited {
+  text-decoration: none;
+}
+
+.operationjuror dl dd ul li a.active {
+  border: 1px solid #3e72ed;
+  color: #3e72ed;
+}
+
+.operationjuror .operjr_guide {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 230px;
+  padding: 25px 20px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  z-index: 99;
+}
+
+.operationjuror .operjr_guide .con {
+  display: block;
+}
+
+.operationjuror .operjr_guide .con strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.operationjuror .operjr_guide .con .txt {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+  font-weight: 300;
+}
+
+.operationjuror .operjr_guide .ly_close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+.operationjuror .declaration {
+  display: block;
+  float: right;
+  border: 0;
+  background: #fff;
+  padding: 0;
+}
+
+.operationjuror .declaration span {
+  display: block;
+  float: left;
+}
+
+.latest_list {
+  display: block;
+  width: 100%;
+  margin-top: 70px;
+  float: left;
+}
+
+.latest_list ul {
+  display: inline-block;
+  width: 100%;
+}
+
+.latest_list ul li {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  height: 34px;
+  line-height: 34px;
+}
+
+.latest_list ul li.active a {
+  text-decoration: none;
+}
+
+.latest_list ul li.active a::before {
+  content: '▶';
+  font-size: 10px;
+  color: #3e72ed;
+  font-weight: 300;
+  float: left;
+  padding: 0 5px 0 0;
+}
+
+.latest_list ul li.active a .obj {
+  width: 700px;
+  font-weight: 400;
+  color: #3e72ed;
+}
+
+.latest_list ul li.active a .obj:hover {
+  text-decoration: none;
+}
+
+.latest_list ul li.active a .nick {
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: #3e72ed;
+}
+
+.latest_list ul li.active a .date {
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: #3e72ed;
+}
+
+.latest_list ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.latest_list ul li a .obj {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+
+.latest_list ul li a .obj:hover {
+  color: #3e72ed;
+  text-decoration: underline;
+}
+
+.latest_list ul li a .nick {
+  position: absolute;
+  top: 0;
+  left: 720px;
+  font-size: 14px;
+  color: #666;
+  float: left;
+  font-weight: 300;
+}
+
+.latest_list ul li a .date {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  float: right;
+}
+
+#user_class .modal-sm {
+  width: 535px;
+}
+
+#user_class .modal-xsm {
+  width: 390px;
+}
+
+#user_class .modal-header {
+  padding: 20px 20px 5px;
+  border-bottom: 0;
+}
+
+#user_class .modal-body {
+  padding: 0 40px;
+}
+
+#user_class .modal-body strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+#user_class .modal-body span {
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  font-weight: 300;
+}
+
+#user_class .modal-body table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#user_class .modal-body table thead tr th {
+  height: 45px;
+  line-height: 45px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: #f6f6f6;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+#user_class .modal-body table tbody tr td {
+  height: 22px;
+  line-height: 22px;
+  padding: 12px 15px;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+#user_class .modal-body table tbody tr td .cl {
+  padding-left: 15px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/sub/board/user.png);
+  background-repeat: no-repeat;
+  float: left;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico01 {
+  background-position: 0 0;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico02 {
+  background-position: 0 -22px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico03 {
+  background-position: 0 -44px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico04 {
+  background-position: 0 -66px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico05 {
+  background-position: 0 -88px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico06 {
+  background-position: 0 -110px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico07 {
+  background-position: 0 -132px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico08 {
+  background-position: 0 -154px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico09 {
+  background-position: 0 -176px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico10 {
+  background-position: 0 -198px;
+}
+
+#user_class .modal-footer {
+  border-top: 0;
+  padding-bottom: 60px;
+  text-align: center !important;
+}
+
+#user_class .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  background: #3e72ed;
+}
+
+#user_class .modal-footer button:visited {
+  outline: 0;
+}
+
+#user_class .modal-footer button:active {
+  outline: 0;
+}
+
+#user_class .modal-footer button:focus {
+  outline: 0;
+}
+
+#viewMore .modal-dialog {
+  width: 955px;
+}
+
+#viewMore .modal-dialog .modal-header {
+  padding: 20px 20px 5px;
+  border-bottom: 0;
+}
+
+#viewMore .modal-dialog .modal-body {
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+#viewMore .modal-dialog .modal-body .board_tbl {
+  overflow: hidden;
+  float: left;
+  margin-top: 20px;
+}
+
+#viewMore .modal-dialog .modal-body .board_tbl tbody tr td a .obj {
+  max-width: 300px;
+}
+
+#viewMore .modal-dialog .modal-body .board_pager {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#viewMore .modal-dialog .modal-body .viewMore_guide {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#viewMore .modal-dialog .modal-body .viewMore_guide p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+#viewMore .modal-dialog .modal-body .viewMore_guide button {
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  margin-left: 3px;
+}
+
+#viewMore .modal-dialog .modal-footer {
+  border-top: 0;
+  padding-bottom: 60px;
+  text-align: center !important;
+}
+
+#viewMore .modal-dialog .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  background: #3e72ed;
+}
+
+#viewMore .modal-dialog .modal-footer button:visited {
+  outline: 0;
+}
+
+#viewMore .modal-dialog .modal-footer button:active {
+  outline: 0;
+}
+
+#viewMore .modal-dialog .modal-footer button:focus {
+  outline: 0;
+}
+
+#dcr .modal-sm {
+  width: 535px;
+}
+
+#dcr .modal-sm .modal-header {
+  padding: 20px 20px 5px;
+  border-bottom: 0;
+}
+
+#dcr .modal-sm .modal-footer {
+  border-top: 0;
+  padding-bottom: 60px;
+  text-align: center !important;
+}
+
+#dcr .modal-sm .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  background: #3e72ed;
+}
+
+#dcr .modal-sm .modal-footer button.btn-default {
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+
+#dcr .modal-sm .modal-footer button:visited {
+  outline: 0;
+}
+
+#dcr .modal-sm .modal-footer button:active {
+  outline: 0;
+}
+
+#dcr .modal-sm .modal-footer button:focus {
+  outline: 0;
+}
+
+#dcr .modal-sm .modal-body {
+  padding: 0 40px;
+}
+
+#dcr .modal-sm .modal-body .dcr_title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #f6f6f6;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+#dcr .modal-sm .modal-body .dcr_title span {
+  font-weight: 700;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: #f6f6f6;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo label {
+  width: 60%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-left: 0;
+  float: left;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo label:nth-child(2n) {
+  width: 40%;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo label input[type="radio"] {
+  margin-top: 6px;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .etc_input {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .etc_input textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+#dcr .modal-sm .modal-body .dcr_guide {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #3e72ed;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+
+#dcr .modal-sm .modal-body .dcr_guide span {
+  font-weight: 700;
+}
+
+#dcr .modal-sm .modal-body .txt {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.share_pop {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -400px;
+  width: 380px;
+  height: 154px;
+  border: 1px solid #d7d7d7;
+  padding: 15px 20px;
+  z-index: 99;
+  background: #fff;
+}
+
+.share_pop strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.share_pop .shareList {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.share_pop .shareList a {
+  display: block;
+  text-align: center;
+  margin: 0 14px;
+  float: left;
+}
+
+.share_pop .shareList a:first-child {
+  margin-left: 0;
+}
+
+.share_pop .shareList a:last-child {
+  margin-right: 0;
+}
+
+.share_pop .shareList a.kkost {
+  margin: 0;
+}
+
+.share_pop .shareList a span {
+  display: block;
+  font-size: 12px;
+  color: #333;
+  font-weight: 300;
+  padding: 5px 0;
+}
+
+.share_pop .ly_close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}

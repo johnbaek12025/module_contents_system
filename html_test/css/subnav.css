@@ -1,0 +1,134 @@
+@charset "UTF-8";
+#subNav {
+  position: relative;
+  width: 100%;
+  margin-top: 55px;
+  padding: 0 20px;
+  z-index: 99;
+}
+
+#subNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 3px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#subNav ul li {
+  display: inline-block;
+}
+
+#subNav ul li a {
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 300;
+}
+
+#subNav ul li a:hover {
+  color: #3e72ed;
+  font-weight: bold;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 3px solid #3e72ed;
+}
+
+#subNav ul li a.active {
+  color: #3e72ed;
+  font-weight: bold;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 3px solid #3e72ed;
+}
+
+#subNav.leftNav {
+  margin-top: 0;
+  padding: 0 5px;
+  width: auto;
+  float: left;
+}
+
+#subNav.leftNav ul {
+  display: block;
+}
+
+#subNav.leftNav ul li {
+  margin-right: 45px;
+}
+
+#subNav.leftNav ul li a {
+  font-size: 24px;
+}
+
+#subNav.garo {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  background: #fff;
+  margin-top: 0;
+}
+
+#subNav.garo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1030px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#subNav.garo ul li {
+  height: 61px;
+  line-height: 61px;
+}
+
+#subNav.garo ul li a {
+  height: 61px;
+  line-height: 61px;
+  font-size: 14px;
+  color: #333;
+  padding: 0 20px;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+}
+
+#subNav.garo ul li a .label {
+  background: #3e72ed;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0 3px;
+}
+
+#subNav.garo ul li a:hover {
+  color: #3e72ed;
+  font-weight: 300;
+  border: 0;
+}
+
+#subNav.garo ul li a.active {
+  color: #3e72ed;
+  font-weight: 300;
+  border: 0;
+}
+
+#subNav.garo ul li:first-child::before {
+  content: '';
+}
+
+#subNav.garo ul li::before {
+  content: '│';
+  color: #d8d8d8;
+  font-size: 14px;
+}

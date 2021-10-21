@@ -1,0 +1,256 @@
+.sub-section.npd {
+  padding: 0;
+}
+
+.signal_introduce {
+  display: block;
+  width: 100%;
+}
+
+.signal_introduce .top {
+  display: block;
+  width: 100%;
+  height: 480px;
+  background: url(../img/sub/introduce/topbg.jpg) no-repeat 0 0;
+}
+
+.signal_introduce .top .txt {
+  display: block;
+  padding: 60px 0 0 100px;
+}
+
+.signal_introduce .top .txt strong {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.signal_introduce .top .txt span {
+  display: block;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #333;
+  line-height: 40px;
+}
+
+.signal_introduce .top .download {
+  display: block;
+  padding: 130px 0 0 85px;
+}
+
+.signal_introduce .top .download .btn {
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 55px;
+  width: 290px;
+  padding: 0 35px;
+}
+
+.signal_introduce .top .download .btn-web {
+  display: block;
+  background: #7773F7;
+  margin-bottom: 15px;
+}
+
+.signal_introduce .top .download .btn-web span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  background: url(../img/sub/introduce/bu_web.png) no-repeat 0 50%;
+  padding-left: 10px;
+}
+
+.signal_introduce .top .download .btn-android {
+  background: #000;
+}
+
+.signal_introduce .top .download .btn-android span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: url(../img/sub/introduce/bu_android.jpg) no-repeat 0 50%;
+  padding-left: 20px;
+}
+
+.signal_introduce .top .download .btn-ios {
+  background: #000;
+}
+
+.signal_introduce .top .download .btn-ios span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: url(../img/sub/introduce/bu_ios.png) no-repeat 0 10px;
+  padding-left: 10px;
+}
+
+.signal_introduce .introduce {
+  display: block;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.signal_introduce .introduce .itd {
+  width: 100%;
+  padding: 70px 65px;
+}
+
+.signal_introduce .introduce .itd em {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: #7773F7;
+  border-radius: 28px;
+  padding: 0 15px;
+}
+
+.signal_introduce .introduce .itd strong {
+  display: block;
+  padding-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  line-height: 48px;
+}
+
+.signal_introduce .introduce .itd span {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+}
+
+.signal_introduce .introduce .itd span::before {
+  content: '-';
+  padding-right: 2px;
+}
+
+.signal_introduce .introduce .itd01 {
+  background: url(../img/sub/introduce/itd01.png) no-repeat 650px 75px;
+}
+
+.signal_introduce .introduce .itd02 {
+  background: #FAFAFC url(../img/sub/introduce/itd02.png) no-repeat 70px 75px;
+}
+
+.signal_introduce .introduce .itd03 {
+  background: url(../img/sub/introduce/itd03.png) no-repeat 650px 75px;
+}
+
+.usr-recomm {
+  display: block;
+  width: 100%;
+}
+
+.usr-recomm li {
+  display: block;
+  width: 50%;
+  padding: 40px 20px 40px 0;
+  float: left;
+}
+
+.usr-recomm li .usr_ico {
+  display: block;
+  float: left;
+}
+
+.usr-recomm li .usr_txt {
+  display: block;
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+  line-height: 24px;
+  padding: 10px 0 0 15px;
+}
+
+.dwn_tit {
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+.dwn_b {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.dwn_b .btn {
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 55px;
+  width: 290px;
+  padding: 0 35px;
+}
+
+.dwn_b .btn-web {
+  display: inline-block;
+  background: #7773F7;
+}
+
+.dwn_b .btn-web span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  background: url(../img/sub/introduce/bu_web.png) no-repeat 0 50%;
+  padding-left: 10px;
+}
+
+.dwn_b .btn-android {
+  background: #000;
+}
+
+.dwn_b .btn-android span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: url(../img/sub/introduce/bu_android.jpg) no-repeat 0 50%;
+  padding-left: 20px;
+}
+
+.dwn_b .btn-ios {
+  background: #000;
+  margin: 0 15px;
+}
+
+.dwn_b .btn-ios span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: url(../img/sub/introduce/bu_ios.png) no-repeat 0 10px;
+  padding-left: 10px;
+}

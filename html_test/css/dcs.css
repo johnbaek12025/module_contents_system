@@ -1,0 +1,130 @@
+.dcsbox {
+  display: block;
+}
+
+.dcsbox .tab-content .tab-pane {
+  position: relative;
+  width: 100%;
+}
+
+.dcsbox .tab-content .tab-pane > .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dcsbox .tab-content .tab-pane > .date span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.dcsAll {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sch-input {
+  display: block;
+  float: left;
+}
+
+.sch-input.pn-a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sch-input.pn-a.a-right {
+  top: -10px;
+  left: auto;
+  right: 0;
+}
+
+.sch-input .form-inline {
+  position: relative;
+}
+
+.sch-input .form-inline .input-group {
+  width: 330px;
+}
+
+.sch-input input.form-control {
+  width: 330px;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  background: #f5f5f5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+  padding-right: 45px;
+}
+
+.sch-input input.form-control::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+}
+
+.sch-input input.form-control:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+}
+
+.sch-input input.form-control::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+}
+
+.sch-input input.form-control::placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+}
+
+.sch-input button {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 99;
+  border: 0;
+  background: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4379EA;
+}
+
+.dcsAll .dcs-kinds {
+  display: block;
+  float: right;
+}
+
+.dcsAll .dcs-kinds select.form-control {
+  padding: 0 20px 0 15px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  background: #f5f5f5;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dcsContent {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+}

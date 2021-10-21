@@ -1,0 +1,212 @@
+.aisignal_w {
+  display: block;
+}
+
+.aisignal_w .top {
+  display: block;
+  overflow: hidden;
+}
+
+.aisignal_w .top .left {
+  width: 230px;
+  float: left;
+}
+
+.aisignal_w .top .right {
+  position: relative;
+  width: calc(100% - 270px);
+  float: left;
+  margin-left: 40px;
+}
+
+.aisignal_w .top .right .tit {
+  display: block;
+}
+
+.aisignal_w .top .right .tit strong {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.aisignal_w .top .right .txt {
+  display: block;
+  margin-top: 15px;
+}
+
+.aisignal_w .top .right .txt span {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+}
+
+.aisignal_w .top .right .button {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.aisignal_w .top .right .button .btn {
+  width: 120px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0;
+  margin-right: 10px;
+  border: 1px solid #3e72ed;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.aisignal_w .top .right .button .btn-primary {
+  background: #3e72ed;
+}
+
+.aisignal_w .top .right .button .btn-primary span {
+  background: url(../img/bu_bell_on.png) no-repeat 0 50%;
+  background-size: 15px auto;
+}
+
+.aisignal_w .top .right .button .btn-default {
+  background: #fff;
+}
+
+.aisignal_w .top .right .button .btn-default span {
+  color: #3e72ed !important;
+  background: url(../img/bu_bell.png) no-repeat 0 50%;
+  background-size: 15px auto;
+}
+
+.aisignal_w .top .right .button .btn span {
+  margin: 0;
+  padding: 0 0 0 18px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.aisignal_w .top .right .date {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.aisignal_w .top .right .date span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #666;
+}
+
+.aisignal_w .top .right .date span em {
+  padding-left: 10px;
+  color: #999;
+  font-style: normal;
+}
+
+.aisignal_w .chart_w {
+  display: block;
+}
+
+.aisignal_w .chart_w .chartbox {
+  min-height: 300px;
+  background: #f5f5f5;
+}
+
+.aisignal_w .info {
+  display: block;
+}
+
+.aisignal_w .info p {
+  display: block;
+  padding: 20px 0;
+  font-size: 13px;
+  color: #666;
+  font-weight: 300;
+}
+
+.aisignal_w .info .popover {
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+}
+
+.aisignal_w .info .popover .txt {
+  display: block;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 5px 0;
+}
+
+.aisignal_w .info .popover .txt strong {
+  display: block;
+  font-weight: 700;
+  padding: 3px 0;
+}
+
+.aisignal_w .info .popover .txt:last-child {
+  border-bottom: 0;
+}
+
+.aisignal_w .info .info_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aisignal_w .info .info_list > div {
+  display: block;
+  width: 222px;
+  height: 120px;
+  border: 1px solid #dfdfdf;
+  text-align: center;
+}
+
+.aisignal_w .info .info_list > div strong {
+  display: block;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.aisignal_w .info .info_list > div span {
+  display: block;
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+}
+
+.aisignal_w .signal_more {
+  position: absolute;
+  top: 32px;
+  right: 35px;
+}
+
+.aisignal_w .signal_more button {
+  width: 130px;
+  height: 35px;
+  line-height: 33px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background: none;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.aisignal_w .signal_more button span {
+  margin: 0;
+  padding: 0;
+}

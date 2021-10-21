@@ -1,0 +1,65 @@
+.board_pager {
+  display: block;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.paging {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  float: left;
+}
+
+.pagination li.disabled a {
+  display: none;
+}
+
+.pagination li:first-child a {
+  border: 1px solid #dedede;
+  border-radius: 0;
+}
+
+.pagination li:first-child a span {
+  border: none;
+}
+
+.pagination li:last-child a {
+  border: 1px solid #dedede;
+  border-radius: 0;
+}
+
+.pagination li:last-child a span {
+  border: none;
+}
+
+.pagination li.active a,
+.pagination li.active span {
+  border: 1px solid #3e72ed;
+  color: #3e72ed;
+  background: none;
+  font-weight: 500;
+}
+
+.pagination li a {
+  width: 34px;
+  height: 34px;
+  line-height: 32px;
+  border: 0;
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 5px;
+  border: 1px solid #fff;
+}
+
+.pagination li a:hover {
+  border: 1px solid #3e72ed;
+  color: #3e72ed;
+  background: none;
+  font-weight: 500;
+}

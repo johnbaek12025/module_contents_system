@@ -1,0 +1,325 @@
+.btn-circle {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+  background: #f5f5f7;
+  border: 1px solid #d7d7d7;
+  margin-left: 3px;
+}
+
+.btn-list {
+  display: block;
+  padding: 0 15px;
+  height: 34px;
+  border-radius: 34px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  font-size: 13px;
+  color: #666;
+  margin-left: 3px;
+}
+
+.btn-white {
+  background: #fff;
+}
+
+.themebox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.themebox .chartbox {
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid #dfdfdf;
+}
+
+.themebox .left {
+  display: block;
+  width: calc(50% - 20px);
+  float: left;
+}
+
+.themebox .right {
+  display: block;
+  width: calc(50% - 20px);
+  float: right;
+}
+
+.themeNews {
+  display: block;
+  overflow: hidden;
+}
+
+.newsList {
+  display: block;
+}
+
+.newsList .list {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.newsList .list:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.newsList .list > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+
+.newsList .list .title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding-right: 10px;
+}
+
+.newsList .list .title strong {
+  display: block;
+  max-width: calc(100% - 250px);
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+
+.newsList .list .title .label {
+  height: 20px;
+  line-height: 20px;
+  padding: 0 7px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.newsList .list .title .label-danger {
+  background: #FB5360;
+}
+
+.newsList .list .txt {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: #666;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.newsList .list .date {
+  position: absolute;
+  width: 180px;
+  text-align: right;
+  top: 0;
+  right: 0;
+}
+
+.newsList .list .date span {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+}
+
+.newsList .list .date span:first-child {
+  padding-left: 0;
+}
+
+.newsList .list .tag {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.newsList .list .tag span {
+  padding-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #3e72ed;
+}
+
+.newsList .list .admin-delete {
+  position: relative;
+  display: block;
+  height: 30px;
+  margin: 10px 0 0;
+}
+
+.newsList .list .admin-delete a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #d7d7d7;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.newsList .list .admin-delete a:hover {
+  border: 0;
+  background: #FB5360;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.listContentView {
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.listContentView .top {
+  display: block;
+}
+
+.listContentView .top .title {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.listContentView .top .title strong {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.listContentView .top .date {
+  display: block;
+}
+
+.listContentView .top .date span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.listContentView .cont {
+  display: block;
+  margin: 20px 0;
+  padding: 40px 0;
+  min-height: 350px;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 15px;
+  color: #666;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.listContentView .cont a {
+  font-size: 15px;
+  color: #666;
+  font-weight: 300;
+}
+
+.listContentView .cont .info {
+  display: block;
+  padding-top: 40px;
+}
+
+.btn-group {
+  display: block;
+  text-align: right;
+  overflow: hidden;
+}
+
+.btn-group button {
+  float: right;
+}
+
+.themePop {
+  top: 50% !important;
+  left: 550px !important;
+  margin-top: -42px;
+}
+
+.latest.allList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.latest.allList ul li {
+  display: block;
+  width: calc(50% - 30px);
+  margin-bottom: 10px;
+}
+
+.latest.allList ul li a {
+  display: block;
+  width: 100%;
+  height: 17px;
+  line-height: 17px;
+}
+
+.latest.allList ul li a span {
+  display: block;
+  width: calc(100% - 100px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+}
+
+.latest.allList ul li a em {
+  float: right;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.latest.allList ul li a:hover span {
+  text-decoration: underline;
+}
+
+.sectorbox {
+  position: relative;
+}
+
+.sectorbox .chartbox {
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  float: left;
+  background: #f8f8f8;
+}

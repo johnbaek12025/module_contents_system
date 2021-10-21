@@ -1,0 +1,168 @@
+@charset "UTF-8";
+#direct .modal-header {
+  position: relative;
+  padding: 0;
+  border: 0;
+}
+
+#direct .modal-header button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+#direct .modal-body {
+  padding: 20px 15px 50px;
+}
+
+#direct .modal-body .top {
+  display: block;
+  text-align: center;
+}
+
+#direct .modal-body .top > span {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+#direct .modal-body .top strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+#direct .modal-body .top strong span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fb5360;
+}
+
+#direct .modal-body .con {
+  display: block;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#direct .modal-body .con ul {
+  display: inline-block;
+  width: 480px;
+}
+
+#direct .modal-body .con ul li {
+  width: 215px;
+  text-align: center;
+  float: left;
+}
+
+#direct .modal-body .con ul li:first-child {
+  width: 255px;
+  background-image: url(../img/bu_pop.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+}
+
+#direct .modal-body .con ul li .box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 180px;
+  height: 100px;
+  background: #e4f8fa;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 10px;
+  margin-left: 17px;
+  margin-right: 18px;
+  float: left;
+}
+
+#direct .modal-body .con ul li .box span {
+  display: block;
+  font-size: 20px;
+  color: #333b58;
+  font-weight: 400;
+}
+
+#direct .modal-body .con ul li .box strong {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3e72ed;
+  font-weight: 700;
+}
+
+#direct .modal-body .con ul li span {
+  display: block;
+  width: 215px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.075em;
+  padding-top: 10px;
+  float: left;
+}
+
+#direct .modal-body .button {
+  display: block;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#direct .modal-body .button button {
+  width: 245px;
+  height: 64px;
+  background: #3e72ed;
+  border-radius: 64px;
+}
+
+#direct .modal-body .button button span {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+#direct .modal-body .button button span em {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  color: #b7cbfb;
+  font-weight: 300;
+}
+
+#direct .modal-body .button ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#direct .modal-body .button ul li {
+  display: block;
+  margin: 0 20px;
+}
+
+#direct .modal-body .button ul li a {
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 300;
+}
+
+#direct .modal-body .button ul li a::after {
+  content: '→';
+  padding-left: 5px;
+}

@@ -1,0 +1,1750 @@
+@charset "UTF-8";
+.board {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.board_top_btn {
+  display: block;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.board_btm_btn {
+  display: block;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.admin_notice {
+  display: block;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-top: 10px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.admin_notice dt {
+  width: 110px;
+  height: 41px;
+  line-height: 40px;
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 500;
+  text-align: left;
+  text-indent: 25px;
+}
+
+.admin_notice dd {
+  display: block;
+  width: calc(100% - 110px);
+  height: 41px;
+  line-height: 40px;
+  border-bottom: 1px solid #dfdfdf;
+  float: left;
+  margin-left: 0;
+}
+
+.admin_notice dd::before {
+  content: '│';
+  font-size: 13px;
+  padding-right: 25px;
+  color: #ddd;
+  float: left;
+}
+
+.admin_notice dd a {
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.board_tbl {
+  display: block;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
+.board_tbl .table {
+  border-top: 1px solid #000;
+}
+
+.board_tbl .table thead tr {
+  background: #f5f5f5;
+}
+
+.board_tbl .table thead tr th {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+}
+
+.board_tbl .table tbody tr.info td {
+  background: #f1f5fc;
+}
+
+.board_tbl .table tbody tr.recomment {
+  background: #fafafc;
+}
+
+.board_tbl .table tbody tr td {
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  height: 46px;
+  line-height: 25px;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 0;
+}
+
+.board_tbl .table tbody tr td a {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.board_tbl .table tbody tr td a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.board_tbl .table tbody tr td a .obj {
+  display: block;
+  max-width: 350px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+
+.board_tbl .table tbody tr td a .blind {
+  display: none;
+}
+
+.board_tbl .table tbody tr td a .bagdg {
+  display: inline-block;
+  font-size: 12px;
+  color: #3e72ed;
+  padding-left: 3px;
+}
+
+.board_tbl .table tbody tr td .label {
+  display: inline-block;
+  padding: 0 10px;
+  margin-left: 10px;
+  height: 25px;
+  line-height: 23px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.board_tbl .table tbody tr td .label.label-ins {
+  background: #9ebcff;
+  margin-left: 0;
+}
+
+.board_tbl .table tbody tr td .label.label-rmd {
+  border: 1px solid #fa5460;
+  color: #fa5460;
+}
+
+.board_tbl .table tbody tr td .label.label-blind {
+  border: 1px solid #666;
+  color: #666;
+}
+
+.board_tbl .table tbody tr td .label.label-empty {
+  padding: 0;
+}
+
+.board_tbl .table tbody tr td .label.label-circle {
+  width: 22px;
+  height: 22px;
+  line-height: 22p;
+  border-radius: 22px;
+  margin-left: 0;
+  margin-right: 2px;
+  margin-top: 2px;
+  float: left;
+}
+
+.board_tbl .table tbody tr.blind td a {
+  border-bottom: 0;
+}
+
+.board_tbl .table tbody tr.blind td a .obj {
+  display: none;
+}
+
+.board_tbl .table tbody tr.blind td a .blind {
+  display: inline-block;
+  color: #999;
+}
+
+.board_sch {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+}
+
+.board_sch select {
+  background: #f6f6f7;
+  font-size: 13px;
+}
+
+.board_sch input {
+  background: #f6f6f7;
+  font-size: 13px;
+}
+
+.board_sch button {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #3e72ed;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.board_sch .guide {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  border: 2px solid #cecece;
+  font-size: 11px;
+  color: #cecece;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.board_sch .layer_guide {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+  z-index: 99;
+}
+
+.board_sch .layer_guide .content {
+  display: block;
+  width: auto;
+  height: auto;
+  min-height: 61px;
+  background: #fff;
+  padding: 22px 27px;
+  border: 1px solid #d6d6d6;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.board_sch .layer_guide .ly_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.board_sch .layer_guide .ly_close button {
+  background: none;
+  padding: 0;
+  opacity: .5;
+  font-weight: 700;
+}
+
+.board_sch .layer_guide .ly_close button:hover {
+  opacity: 1;
+}
+
+.board_sch .layer_guide .ly_close button span {
+  font-size: 16px;
+  color: #000;
+}
+
+.b_btn {
+  height: 34px;
+  line-height: 30px;
+  border: 1px solid #dfdfdf;
+  border-radius: 34px;
+  padding: 0 11px;
+  background: none;
+}
+
+.b_btn:hover {
+  border: 1px solid #b2b2b2;
+}
+
+.b_btn.pull-left {
+  margin-right: 8px;
+}
+
+.b_btn.pull-right {
+  margin-left: 8px;
+}
+
+.b_btn span {
+  display: block;
+  padding: 0 5px;
+  color: #333;
+  font-size: 13px;
+  font-weight: 300;
+  float: left;
+}
+
+.b_btn.b_circle {
+  padding: 0 5px;
+}
+
+.b_btn.b_active {
+  background: #f6f6f7;
+}
+
+.b_btn.b_active span {
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.b_btn.b_write {
+  border: 1px solid #3e72ed;
+}
+
+.b_btn.b_write:hover {
+  border: 1px solid #3e72ed;
+  background: #3e72ed;
+}
+
+.b_btn.b_write:hover span {
+  color: #fff;
+  font-weight: 500;
+  background: url(../img/btn_bullet_write_on.png) no-repeat 4px 50%;
+}
+
+.b_btn.b_write span {
+  color: #3e72ed;
+  padding: 0 5px 0 25px;
+  background: url(../img/btn_bullet_write.png) no-repeat 4px 50%;
+}
+
+.board_view_info {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  float: left;
+  overflow: hidden;
+}
+
+.board_view_info .view_title {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.board_view_info .view_title strong {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.board_view_info > .info {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+
+.board_view_info > .info .left {
+  display: block;
+  width: 50%;
+  float: left;
+  cursor: pointer;
+}
+
+.board_view_info > .info .left .lev {
+  display: block;
+  float: left;
+}
+
+.board_view_info > .info .left .lev::after {
+  content: '│';
+  font-size: 14px;
+  color: #dfdfdf;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.board_view_info > .info .left .lev span {
+  display: block;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+.board_view_info > .info .left .lev span.ico_cl01 {
+  background-position: 0 0;
+}
+
+.board_view_info > .info .left .lev span.ico_cl02 {
+  background-position: 0 -22px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl03 {
+  background-position: 0 -44px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl04 {
+  background-position: 0 -66px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl05 {
+  background-position: 0 -88px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl06 {
+  background-position: 0 -110px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl07 {
+  background-position: 0 -132px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl08 {
+  background-position: 0 -154px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl09 {
+  background-position: 0 -176px;
+}
+
+.board_view_info > .info .left .lev span.ico_cl10 {
+  background-position: 0 -198px;
+}
+
+.board_view_info > .info .left .lev span.label {
+  width: 22px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  background-image: url(../img/sub/board/user.png);
+  background-repeat: no-repeat;
+}
+
+.board_view_info > .info .left .user_info {
+  display: block;
+  float: left;
+  line-height: 22px;
+}
+
+.board_view_info > .info .left .user_info span {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.board_view_info > .info .left .user_info span.user_nick {
+  color: #333;
+}
+
+.board_view_info > .info .left .user_info a {
+  display: inline-block;
+  font-size: 13px;
+  color: #3e72ed;
+  text-decoration: underline;
+}
+
+.board_view_info > .info .right {
+  display: block;
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.board_view_info > .info .right .basic-info {
+  display: inline-block;
+  line-height: 22px;
+  padding-right: 25px;
+}
+
+.board_view_info > .info .right .basic-info .viewCount {
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.board_view_info > .info .right .basic-info .viewCount em {
+  font-style: normal;
+  color: #999;
+}
+
+.board_view_info > .info .right .basic-info .viewCount::after {
+  content: '│';
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #dfdfdf;
+}
+
+.board_view_info > .info .right .basic-info .writeDate {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.board_view_info > .info .right .modify-info {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.board_view_content {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  border-top: 1px solid #d7d7d7;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+.board_view_content .viewContent {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #666;
+  font-weight: 300;
+  padding: 80px 0 100px 0;
+}
+
+.board_view_content .vote {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.board_view_content .vote ul {
+  display: inline-block;
+}
+
+.board_view_content .vote ul li {
+  display: inline-block;
+  width: 80px;
+  padding: 15px 0;
+  margin: 0 7px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.board_view_content .vote ul li.approve .count {
+  color: #fc2f2f;
+}
+
+.board_view_content .vote ul li.oppose .count {
+  color: #3e72ed;
+}
+
+.board_view_content .vote ul li .count {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.board_view_content .vote ul li .text {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  padding-top: 10px;
+}
+
+.board_view_content .adText {
+  display: block;
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.board_view_content .adText span {
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 300;
+  padding-right: 15px;
+}
+
+.board_view_content .adText a {
+  font-size: 14px;
+  color: #3e72ed;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.board_view_content .share {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.board_view_content .share > button {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background: #f7f7f7;
+  border: 1px solid #d7d7d7;
+  border-radius: 34px;
+}
+
+.board_view_content .file {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.board_view_content .file dt {
+  width: 72px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  height: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.board_view_content .file dd {
+  margin-left: 75px;
+  height: 18px;
+  line-height: 14px;
+  padding: 0;
+}
+
+.board_view_content .file dd a {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+  text-decoration: underline;
+  padding-right: 5px;
+}
+
+.board_view_content .file dd a:last-child::after {
+  content: '';
+}
+
+.board_view_content .file dd a::after {
+  content: ',';
+}
+
+.operationjuror {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.operationjuror dl {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.operationjuror dl dt {
+  display: block;
+  float: left;
+}
+
+.operationjuror dl dt .txt {
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+.operationjuror dl dt .label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: #333;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  padding: 0;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.operationjuror dl dd {
+  display: block;
+  float: left;
+}
+
+.operationjuror dl dd ul {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.operationjuror dl dd ul li {
+  display: block;
+  margin-right: 5px;
+  float: left;
+}
+
+.operationjuror dl dd ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+  border: 1px solid #d7d7d7;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.operationjuror dl dd ul li a:focus {
+  text-decoration: none;
+}
+
+.operationjuror dl dd ul li a:visited {
+  text-decoration: none;
+}
+
+.operationjuror dl dd ul li a.active {
+  border: 1px solid #3e72ed;
+  color: #3e72ed;
+}
+
+.operationjuror .operjr_guide {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 230px;
+  padding: 25px 20px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  z-index: 99;
+}
+
+.operationjuror .operjr_guide .con {
+  display: block;
+}
+
+.operationjuror .operjr_guide .con strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.operationjuror .operjr_guide .con .txt {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+  font-weight: 300;
+}
+
+.operationjuror .operjr_guide .ly_close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+.operationjuror .declaration {
+  display: block;
+  float: right;
+  border: 0;
+  background: #fff;
+  padding: 0;
+}
+
+.operationjuror .declaration span {
+  display: block;
+  float: left;
+}
+
+.latest_list {
+  display: block;
+  width: 100%;
+  margin-top: 70px;
+  float: left;
+}
+
+.latest_list ul {
+  display: inline-block;
+  width: 100%;
+}
+
+.latest_list ul li {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  height: 34px;
+  line-height: 34px;
+}
+
+.latest_list ul li.active a {
+  text-decoration: none;
+}
+
+.latest_list ul li.active a::before {
+  content: '▶';
+  font-size: 10px;
+  color: #3e72ed;
+  font-weight: 300;
+  float: left;
+  padding: 0 5px 0 0;
+}
+
+.latest_list ul li.active a .obj {
+  width: 700px;
+  font-weight: 400;
+  color: #3e72ed;
+}
+
+.latest_list ul li.active a .obj:hover {
+  text-decoration: none;
+}
+
+.latest_list ul li.active a .nick {
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: #3e72ed;
+}
+
+.latest_list ul li.active a .date {
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: #3e72ed;
+}
+
+.latest_list ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.latest_list ul li a .obj {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+
+.latest_list ul li a .obj:hover {
+  color: #3e72ed;
+  text-decoration: underline;
+}
+
+.latest_list ul li a .nick {
+  position: absolute;
+  top: 0;
+  left: 720px;
+  font-size: 14px;
+  color: #666;
+  float: left;
+  font-weight: 300;
+}
+
+.latest_list ul li a .date {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  float: right;
+}
+
+#user_class .modal-sm {
+  width: 535px;
+}
+
+#user_class .modal-xsm {
+  width: 390px;
+}
+
+#user_class .modal-header {
+  padding: 20px 20px 5px;
+  border-bottom: 0;
+}
+
+#user_class .modal-body {
+  padding: 0 40px;
+}
+
+#user_class .modal-body strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+#user_class .modal-body span {
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  font-weight: 300;
+}
+
+#user_class .modal-body table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#user_class .modal-body table thead tr th {
+  height: 45px;
+  line-height: 45px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: #f6f6f6;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+#user_class .modal-body table tbody tr td {
+  height: 22px;
+  line-height: 22px;
+  padding: 12px 15px;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+#user_class .modal-body table tbody tr td .cl {
+  padding-left: 15px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/sub/board/user.png);
+  background-repeat: no-repeat;
+  float: left;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico01 {
+  background-position: 0 0;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico02 {
+  background-position: 0 -22px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico03 {
+  background-position: 0 -44px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico04 {
+  background-position: 0 -66px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico05 {
+  background-position: 0 -88px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico06 {
+  background-position: 0 -110px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico07 {
+  background-position: 0 -132px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico08 {
+  background-position: 0 -154px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico09 {
+  background-position: 0 -176px;
+}
+
+#user_class .modal-body table tbody tr td span.label.ico.ico10 {
+  background-position: 0 -198px;
+}
+
+#user_class .modal-footer {
+  border-top: 0;
+  padding-bottom: 60px;
+  text-align: center !important;
+}
+
+#user_class .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  background: #3e72ed;
+}
+
+#user_class .modal-footer button:visited {
+  outline: 0;
+}
+
+#user_class .modal-footer button:active {
+  outline: 0;
+}
+
+#user_class .modal-footer button:focus {
+  outline: 0;
+}
+
+#viewMore .modal-dialog {
+  width: 955px;
+}
+
+#viewMore .modal-dialog .modal-header {
+  padding: 20px 20px 5px;
+  border-bottom: 0;
+}
+
+#viewMore .modal-dialog .modal-body {
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+#viewMore .modal-dialog .modal-body .board_tbl {
+  overflow: hidden;
+  float: left;
+  margin-top: 20px;
+}
+
+#viewMore .modal-dialog .modal-body .board_tbl tbody tr td a .obj {
+  max-width: 300px;
+}
+
+#viewMore .modal-dialog .modal-body .board_pager {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#viewMore .modal-dialog .modal-body .viewMore_guide {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#viewMore .modal-dialog .modal-body .viewMore_guide p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+#viewMore .modal-dialog .modal-body .viewMore_guide button {
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  margin-left: 3px;
+}
+
+#viewMore .modal-dialog .modal-footer {
+  border-top: 0;
+  padding-bottom: 60px;
+  text-align: center !important;
+}
+
+#viewMore .modal-dialog .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  background: #3e72ed;
+}
+
+#viewMore .modal-dialog .modal-footer button:visited {
+  outline: 0;
+}
+
+#viewMore .modal-dialog .modal-footer button:active {
+  outline: 0;
+}
+
+#viewMore .modal-dialog .modal-footer button:focus {
+  outline: 0;
+}
+
+#dcr .modal-sm {
+  width: 535px;
+}
+
+#dcr .modal-sm .modal-header {
+  padding: 20px 20px 5px;
+  border-bottom: 0;
+}
+
+#dcr .modal-sm .modal-footer {
+  border-top: 0;
+  padding-bottom: 60px;
+  text-align: center !important;
+}
+
+#dcr .modal-sm .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  background: #3e72ed;
+}
+
+#dcr .modal-sm .modal-footer button.btn-default {
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+
+#dcr .modal-sm .modal-footer button:visited {
+  outline: 0;
+}
+
+#dcr .modal-sm .modal-footer button:active {
+  outline: 0;
+}
+
+#dcr .modal-sm .modal-footer button:focus {
+  outline: 0;
+}
+
+#dcr .modal-sm .modal-body {
+  padding: 0 40px;
+}
+
+#dcr .modal-sm .modal-body .dcr_title {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #f6f6f6;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+#dcr .modal-sm .modal-body .dcr_title span {
+  font-weight: 700;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: #f6f6f6;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo label {
+  width: 60%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-left: 0;
+  float: left;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo label:nth-child(2n) {
+  width: 40%;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .ch_rdo label input[type="radio"] {
+  margin-top: 6px;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .etc_input {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+#dcr .modal-sm .modal-body .dcr_reason .etc_input textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+#dcr .modal-sm .modal-body .dcr_guide {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #3e72ed;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+
+#dcr .modal-sm .modal-body .dcr_guide span {
+  font-weight: 700;
+}
+
+#dcr .modal-sm .modal-body .txt {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.share_pop {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -400px;
+  width: 380px;
+  height: 154px;
+  border: 1px solid #d7d7d7;
+  padding: 15px 20px;
+  z-index: 99;
+  background: #fff;
+}
+
+.share_pop strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.share_pop .shareList {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.share_pop .shareList a {
+  display: block;
+  text-align: center;
+  margin: 0 14px;
+  float: left;
+}
+
+.share_pop .shareList a:first-child {
+  margin-left: 0;
+}
+
+.share_pop .shareList a:last-child {
+  margin-right: 0;
+}
+
+.share_pop .shareList a.kkost {
+  margin: 0;
+}
+
+.share_pop .shareList a span {
+  display: block;
+  font-size: 12px;
+  color: #333;
+  font-weight: 300;
+  padding: 5px 0;
+}
+
+.share_pop .ly_close {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+.filebox input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  text-indent: -9999em;
+}
+
+.filebox label {
+  cursor: pointer;
+  height: 33px;
+  line-height: 30px;
+  padding: 0 15px;
+  background: #3e72ed;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 5px 0 10px;
+}
+
+/* named upload */
+.filebox .upload-name {
+  display: block;
+  width: 175px;
+  height: 33px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+  float: left;
+}
+
+.write {
+  display: block;
+}
+
+.write .writeTop {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  float: left;
+}
+
+.write .writeTop table {
+  border-top: 1px solid #000;
+}
+
+.write .writeTop table tbody tr th {
+  height: 53px;
+  line-height: 52px;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0 15px 0 40px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.write .writeTop table tbody tr td {
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0 40px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.write .editorBox {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.write .file_upload_box {
+  display: block;
+  width: 100%;
+  background: #f6f6f6;
+  padding: 20px 0;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.write .file_upload_box dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.write .file_upload_box dl dt {
+  display: inline-block;
+  width: 130px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.write .file_upload_box dl dd {
+  display: inline-block;
+}
+
+.write .file_upload_box dl dd form {
+  display: block;
+  width: 684px;
+}
+
+.write .file_upload_box dl dd form .form-control {
+  width: 600px;
+  height: 78px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  overflow-y: auto;
+  float: left;
+}
+
+.write .file_upload_box dl dd form .form-control option {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.write .file_upload_box dl dd form input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: -9999em;
+}
+
+.write .file_upload_box dl dd form label.imgUp {
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  background: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  float: left;
+}
+
+.write .file_upload_box dl dd form button {
+  display: block;
+  width: 64px;
+  height: 34px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  background: #fff;
+  margin: 10px 0 0 20px;
+  float: left;
+}
+
+.write p {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 300;
+}
+
+.comment_list {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.cmmtBox {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 20px 0;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.cmmtBox:last-child {
+  border-bottom: 0;
+}
+
+.cmmtBox.re_cmmt {
+  padding-left: 30px;
+  background: url(../img/sub/board/re_cmmt.gif) no-repeat 10px 21px;
+}
+
+.cmmtBox .user_info {
+  display: block;
+}
+
+.cmmtBox .user_info .user_nick {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  padding-right: 7px;
+}
+
+.cmmtBox .user_info .user_ip {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+  padding-right: 7px;
+}
+
+.cmmtBox .user_info .user_date {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.cmmtBox .user_info .cmmt_del {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+
+.cmmtBox .user_info .cmmt_del button {
+  border: 0;
+  padding: 0;
+  margin: 0 0 0 5px;
+  background: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  border-bottom: 1px solid #333;
+}
+
+.cmmtBox .cmmt_cont {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cmmtBox .cmmt_cont .text {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  line-height: 18px;
+}
+
+.cmmtBox .cmmt_cont .text span {
+  cursor: pointer;
+}
+
+.cmmtBox .vote {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.cmmtBox .vote ul {
+  display: inline-block;
+}
+
+.cmmtBox .vote ul li {
+  display: block;
+  height: 33px;
+  padding-left: 42px;
+  margin-left: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.cmmtBox .vote ul li span {
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.cmmtBox .vote ul li.approve {
+  background: url(../img/sub/board/approve.png) no-repeat 0 50%;
+}
+
+.cmmtBox .vote ul li.approve span {
+  color: #fc2f2f;
+}
+
+.cmmtBox .vote ul li.oppose {
+  background: url(../img/sub/board/oppose.png) no-repeat 0 50%;
+}
+
+.cmmtBox .vote ul li.oppose span {
+  color: #3e72ed;
+}
+
+.cmmtBox .declaration {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.cmmtBox .declaration span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.re_cmmt_input {
+  display: none;
+  width: 100%;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.re_cmmt .re_cmmt_input {
+  padding-left: 0;
+}
+
+.re_cmmt_input .inputBox {
+  position: relative;
+  display: block;
+  width: 840px;
+  min-height: 102px;
+  border: 1px solid #d7d7d7;
+  background: #f6f6f6;
+  padding: 12px 15px;
+  margin-top: 25px;
+  float: left;
+}
+
+.re_cmmt_input .inputBox .user_nick {
+  display: block;
+  float: left;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.re_cmmt_input .inputBox .input_info {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+}
+
+.re_cmmt_input .inputBox textarea {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-top: 10px;
+  float: left;
+}
+
+.re_cmmt_input .btn {
+  display: block;
+  width: 70px;
+  float: right;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.re_cmmt_input .btn button {
+  display: block;
+  width: 65px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+.cmmt_input {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 25px 0;
+  border: 1px solid #dfdfdf;
+  padding: 30px 20px 30px 30px;
+}
+
+.cmmt_input strong {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.cmmt_input textarea {
+  display: block;
+  width: 830px;
+  height: 80px;
+  border: 1px solid #d7d7d7;
+  background: #f6f6f6;
+  float: left;
+  margin-top: 20px;
+}
+
+.cmmt_input button {
+  display: block;
+  float: right;
+  width: 65px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-top: 19px;
+}
+
+.cmmt_input .input_info {
+  position: absolute;
+  top: 35px;
+  right: 98px;
+  display: inline-block;
+  width: auto;
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+}

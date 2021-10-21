@@ -1,0 +1,186 @@
+.nborder .modal-header {
+  border-bottom: 0;
+}
+
+.nborder .modal-body {
+  display: inline-block;
+  width: 100%;
+  position: initial;
+}
+
+.nborder .modal-footer {
+  border-top: 0;
+}
+
+.modal-title.btitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3E72ED;
+}
+
+.scb_popup .modal-dialog {
+  width: 540px;
+}
+
+.scb_popup .modal-body .scb_guide {
+  display: block;
+}
+
+.scb_popup .modal-body .scb_guide.box {
+  width: 440px;
+  height: 110px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.scb_popup .modal-body .scb_guide.box span {
+  display: block;
+  line-height: 36px;
+  padding-top: 20px;
+}
+
+.scb_popup .modal-body .scb_guide.txt-s span {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.scb_popup .modal-body .scb_guide span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+}
+
+.scb_popup .modal-body .scb_guide ul {
+  display: block;
+  width: 100%;
+}
+
+.scb_popup .modal-body .scb_guide ul li {
+  display: block;
+  text-align: center;
+}
+
+.scb_popup .modal-body .scb_guide ul li div {
+  display: inline-block;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+}
+
+.scb_popup .modal-body .scb_guide ul li div::before {
+  content: '\00B7';
+  padding-right: 5px;
+}
+
+.scb_popup .modal-body .scb_guide ul li div a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.scb_popup .modal-body .scb_input {
+  display: block;
+}
+
+.scb_popup .modal-body .scb_input dl dt {
+  display: block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  float: left;
+  clear: left;
+}
+
+.scb_popup .modal-body .scb_input dl dt.a_num_input {
+  display: none;
+}
+
+.scb_popup .modal-body .scb_input dl dd {
+  display: block;
+  width: calc(100% - 100px);
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.scb_popup .modal-body .scb_input dl dd.a_num_input {
+  display: none;
+}
+
+.scb_popup .modal-body .scb_input dl dd .form-group {
+  display: block;
+  float: left;
+}
+
+.scb_popup .modal-body .scb_input dl dd .form-control {
+  width: 204px;
+  height: 40px;
+  border: 1px solid #dfdfdf;
+  background: #f5f5f5;
+  padding: 0 10px;
+}
+
+.scb_popup .modal-body .scb_input dl dd label, .scb_popup .modal-body .scb_input dl dd span {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 15px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+}
+
+.scb_popup .modal-body .scb_input dl dd span.time {
+  margin-left: 5px;
+}
+
+.scb_popup .modal-body .scb_input dl dd button {
+  width: 120px;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid #3E72ED;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #3E72ED;
+  padding: 0;
+  background: #fff;
+  margin-left: 10px;
+}
+
+.scb_popup .modal-footer {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.scb_popup .modal-footer button {
+  padding: 0 40px;
+  height: 40px;
+  line-height: 38px;
+}
+
+.scb_popup .modal-footer button.btn-primary {
+  background: #3E72ED;
+  border-radius: 40px;
+}
+
+.scb_popup .modal-footer button span {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.scb_popup .modal-footer button .glyphicon {
+  padding-right: 10px;
+}

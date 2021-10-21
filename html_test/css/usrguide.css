@@ -1,0 +1,243 @@
+.usrguide .box {
+  display: block;
+  padding-top: 40px;
+}
+
+.usrguide .box.box01 {
+  min-height: 180px;
+  background: url(../img/sub/usrguide/boxbg.png) no-repeat 675px 8px;
+}
+
+.usrguide .box.box01 .top {
+  display: block;
+}
+
+.usrguide .box.box01 .top .txt {
+  display: block;
+  margin-top: 55px;
+}
+
+.usrguide .box.box01 .top .txt span {
+  display: block;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #7874F7;
+}
+
+.usrguide .box.box01 .box-title {
+  display: block;
+  height: 29px;
+  text-indent: -9999em;
+  background: url(../img/sub/usrguide/tit01.png) no-repeat 0 0;
+}
+
+.usrguide .box.box02 .box-title {
+  display: block;
+  height: 29px;
+  text-indent: -9999em;
+  background: url(../img/sub/usrguide/tit02.png) no-repeat 0 0;
+}
+
+.usrguide .box .gde {
+  display: block;
+  border-top: 1px solid #d7d7d7;
+  padding: 15px 0;
+}
+
+.usrguide .box .gde span {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.usrguide .box .svc_w {
+  padding: 30px 0;
+  border-top: 1px solid #d7d7d7;
+}
+
+.usrguide .box .svc_w .svcbox {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.usrguide .box .svc_w .svcbox.btm {
+  padding-top: 30px;
+}
+
+.usrguide .box .svc_w .svcbox.btm .left, .usrguide .box .svc_w .svcbox.btm .right {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.usrguide .box .svc_w .svcbox.btm .left strong, .usrguide .box .svc_w .svcbox.btm .left span, .usrguide .box .svc_w .svcbox.btm .right strong, .usrguide .box .svc_w .svcbox.btm .right span {
+  margin-left: 15px;
+}
+
+.usrguide .box .svc_w .svcbox.btm .left strong, .usrguide .box .svc_w .svcbox.btm .right strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.usrguide .box .svc_w .svcbox.btm .left span, .usrguide .box .svc_w .svcbox.btm .right span {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+}
+
+.usrguide .box .svc_w .svcbox.btm .left span em, .usrguide .box .svc_w .svcbox.btm .right span em {
+  color: #3e72ed;
+  cursor: pointer;
+}
+
+.usrguide .box .svc_w .svcbox .left {
+  display: block;
+  width: 460px;
+  float: left;
+}
+
+.usrguide .box .svc_w .svcbox .left strong, .usrguide .box .svc_w .svcbox .left span {
+  margin-left: 15px;
+}
+
+.usrguide .box .svc_w .svcbox .left strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.usrguide .box .svc_w .svcbox .left span {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+}
+
+.usrguide .box .svc_w .svcbox .left span em {
+  color: #3e72ed;
+  cursor: pointer;
+}
+
+.usrguide .box .svc_w .svcbox .right {
+  display: block;
+  width: calc(100% - 500px);
+  padding-top: 15px;
+  float: right;
+}
+
+.usrguide .box .svc_w .svcbox .right button {
+  display: block;
+  width: 200px;
+  height: 70px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  background: #3e72ed;
+}
+
+.usrguide .box .svc_w .svcbox .right button span {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+.usrguide .box .svc_w .svcbox .right button em {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.usrguide .box .svc_w .svcbox .right button:active {
+  background: #ccc;
+}
+
+.payment_dwn {
+  display: block;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #d7d7d7;
+}
+
+.payment_dwn div {
+  height: 90px;
+  background: #DBEBFF;
+}
+
+.payment_dwn div strong {
+  display: block;
+  padding-right: 50px;
+  height: 90px;
+  line-height: 90px;
+  float: left;
+  text-indent: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1A479A;
+}
+
+.payment_dwn div .btn {
+  display: inline-block;
+  height: 44px;
+  line-height: 42px;
+  border-radius: 44px;
+  padding: 0 17px;
+  margin: 25px 6px 0;
+}
+
+.payment_dwn div .btn-web {
+  display: block;
+  background: #7773F7;
+  margin-bottom: 15px;
+}
+
+.payment_dwn div .btn-web span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  background: url(../img/sub/introduce/bu_web.png) no-repeat 0 50%;
+  padding-left: 10px;
+}
+
+.payment_dwn div .btn-android {
+  background: #000;
+}
+
+.payment_dwn div .btn-android span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background: url(../img/sub/introduce/bu_android.jpg) no-repeat 5px 12px;
+  background-size: 18px 20px;
+  padding: 0 5px 0 35px;
+}
+
+.payment_dwn div .btn-ios {
+  background: #000;
+}
+
+.payment_dwn div .btn-ios span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background: url(../img/sub/introduce/bu_ios.png) no-repeat 10px 7px;
+  background-size: 21px 26px;
+  padding: 0 5px 0 50px;
+}

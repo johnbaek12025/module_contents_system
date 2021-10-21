@@ -1,0 +1,489 @@
+@charset "UTF-8";
+.main-chart {
+  display: block;
+}
+
+.main-chart .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 50%;
+  float: left;
+  padding-right: 15px;
+}
+
+.main-chart .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 50%;
+  float: left;
+}
+
+.main-chart .right::before {
+  content: '';
+  border-left: 1px solid #d7d7d7;
+  height: 90px;
+  width: 1px;
+  padding-right: 15px;
+}
+
+.main-chart .label.label-default {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  background: #333;
+  padding: 3px 5px;
+}
+
+.main-chart .info {
+  display: block;
+  width: 240px;
+  float: left;
+}
+
+.main-chart .info .con {
+  display: block;
+  padding-top: 15px;
+}
+
+.main-chart .info .con strong {
+  font-size: 30px;
+  color: #333;
+  font-weight: 300;
+}
+
+.main-chart .info .con span {
+  padding-left: 3px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.main-chart .chartbox {
+  display: block;
+  width: calc(100% - 240px);
+  float: left;
+}
+
+.main-chart .chartbox span {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  background: #f8f8f8;
+}
+
+.main-issue .left {
+  width: 500px;
+  height: 450px;
+  float: left;
+  padding-right: 15px;
+}
+
+.main-issue .left #chartdiv {
+  height: 450px;
+}
+
+.main-issue .right {
+  width: calc(100% - 500px);
+  height: 450px;
+  float: left;
+}
+
+.main_issue_w {
+  display: block;
+  width: 100%;
+}
+
+.main_issue_w .title {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.main_issue_w .title span {
+  color: #447AEC;
+}
+
+.main_issue_w .chartbox {
+  display: block;
+  margin-top: 30px;
+  min-height: 190px;
+  background: #f8f8f8;
+}
+
+.main_issue_w .mainitem {
+  display: block;
+  overflow: hidden;
+  margin-top: 30px;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+
+.main_issue_w .mainitem strong {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-indent: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  float: left;
+}
+
+.main_issue_w .mainitem dl {
+  display: block;
+  float: left;
+}
+
+.main_issue_w .mainitem dl dt {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  text-indent: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+}
+
+.main_issue_w .mainitem dl dd {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  text-indent: 3px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main_issue_w .relation {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.main_issue_w .relation .tit {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 5px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main_issue_w .relation .txt {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  padding-left: 5px;
+}
+
+.main-signal {
+  display: block;
+  width: 100%;
+}
+
+.main-signal .left {
+  display: block;
+  width: 385px;
+  float: left;
+}
+
+.main-signal .right {
+  display: block;
+  width: calc(100% - 385px);
+  float: left;
+  padding-left: 50px;
+}
+
+.main-signal .left .signal {
+  display: block;
+  width: 100%;
+}
+
+.main-signal .left .signal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-signal .left .signal ul li {
+  display: block;
+  width: 110px;
+}
+
+.main-signal .left .signal ul li .ccl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 110px;
+  border: 1px solid #FC6C76;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  border-radius: 110px;
+}
+
+.main-signal .left .signal ul li .ccl.sell {
+  border: 1px solid #4F86FF;
+}
+
+.main-signal .left .signal ul li .ccl span {
+  display: block;
+  width: 100%;
+}
+
+.main-signal .left .signal ul li .ccl strong {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.main-signal .left .info {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+
+.main-signal .left .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-signal .left .info ul li {
+  display: block;
+}
+
+.main-signal .left .info ul li dl {
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.main-signal .left .info ul li dl dt {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  color: #333;
+}
+
+.main-signal .left .info ul li dl dd {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main-signal .left .more {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.main-signal .left .more a {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.main-signal .left .more a::after {
+  content: '+';
+  padding-right: 3px;
+}
+
+.main-items {
+  display: block;
+  width: 100%;
+}
+
+.main-items > .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-items > .nav li {
+  float: none;
+  margin-bottom: 0;
+}
+
+.main-items > .nav li a {
+  margin: 0 50px;
+  padding-top: 0;
+  padding-right: 2px;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  border: 0;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+}
+
+.main-items > .nav li a:hover {
+  color: #4C84FF;
+  font-weight: 700;
+  border-bottom: 2px solid #4C84FF;
+  background: none;
+}
+
+.main-items > .nav li a:hover .label {
+  background: #4C84FF;
+  color: #fff;
+}
+
+.main-items > .nav li a:active {
+  outline: 0;
+}
+
+.main-items > .nav li a .label {
+  height: 20px;
+  line-height: 20px;
+  padding: 0 3px;
+  border: 1px solid #4C84FF;
+  border-radius: 5px;
+  color: #4C84FF;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main-items > .nav li.active a {
+  color: #4C84FF;
+  font-weight: 700;
+  border-bottom: 2px solid #4C84FF;
+}
+
+.main-items > .nav li.active a .label {
+  background: #4C84FF;
+  color: #fff;
+}
+
+.main-items > .nav li.active a:hover, .main-items > .nav li.active a:active, .main-items > .nav li.active a:focus {
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #4C84FF;
+}
+
+.main-items > .tab-content {
+  display: block;
+  margin-top: 30px;
+}
+
+.main-items-tab {
+  display: block;
+}
+
+.main-items-tab > .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-items-tab > .nav li {
+  display: block;
+}
+
+.main-items-tab > .nav li.active a {
+  background: #4C84FF;
+  border: 1px solid #4C84FF;
+  color: #fff;
+}
+
+.main-items-tab > .nav li a {
+  margin: 0 5px;
+  padding: 0 20px;
+  height: 34px;
+  line-height: 32px;
+  border: 1px solid #d7d7d7;
+  border-radius: 34px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+.main-items-tab > .nav li a:hover {
+  background: #4C84FF;
+  color: #fff;
+  border: 1px solid #4C84FF;
+}
+
+.main-items-tab .guide {
+  display: block;
+  clear: both;
+  float: left;
+}
+
+.main-items-tab .guide span {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.main-items-tab .guide span::before {
+  content: '\00B7';
+  padding-right: 5px;
+}
+
+.main-items-tab .more {
+  float: right;
+}
+
+.main-items-tab .more a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4C84FF;
+  text-decoration: underline;
+}
+
+.main-items-tab .more a::after {
+  content: " →";
+}

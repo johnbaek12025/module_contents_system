@@ -1,0 +1,112 @@
+.b_trend_w {
+  position: relative;
+  display: block;
+}
+
+.b_trend_w .table_w {
+  position: relative;
+  overflow: hidden;
+}
+
+.b_trend_w .table_w .date {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 20px;
+  line-height: 20px;
+}
+
+.b_trend_w .table_w .date span {
+  font-size: 13px;
+  color: #999;
+}
+
+.b_trend_w .guide {
+  display: block;
+  clear: both;
+  float: left;
+}
+
+.b_trend_w .guide span {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.b_trend_w .guide span::before {
+  content: '\00B7';
+  padding-right: 5px;
+}
+
+.b_trend_w .guide span em {
+  font-style: normal;
+}
+
+.b_trend {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.b_trend .left {
+  display: block;
+  width: 670px;
+  height: 300px;
+  float: left;
+}
+
+.b_trend .right {
+  display: block;
+  width: calc(100% - 710px);
+  height: 300px;
+  float: right;
+}
+
+.b_trend .right .trend_tbl_title {
+  display: block;
+  overflow: hidden;
+}
+
+.b_trend .right .trend_tbl_title strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.b_trend .right .trend_tbl_title strong em {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.b_trend .right .trend_tbl_title span {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+  float: right;
+}
+
+.b_trend .right .table thead tr th, .b_trend .right .table thead tr td {
+  height: 22px;
+  line-height: 22px;
+  font-weight: 300;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.b_trend .right .table tbody tr:first-child th, .b_trend .right .table tbody tr:first-child td {
+  padding-top: 18px;
+}
+
+.b_trend .right .table tbody tr th, .b_trend .right .table tbody tr td {
+  height: 16px;
+  line-height: 16px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+}

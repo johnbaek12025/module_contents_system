@@ -1,0 +1,466 @@
+.ch_today {
+  display: block;
+  margin-left: 110px;
+  padding-top: 10px;
+  float: Left;
+}
+
+.ch_today span {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.ch_today strong {
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.ch_today button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+
+.issue-nav-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 54px;
+}
+
+.issue-nav-list .bx-wrapper {
+  max-width: 955px !important;
+}
+
+.issue-nav-list .bx-prev {
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  z-index: 99;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Dotum;
+  color: #d8d8d8;
+  font-weight: 500;
+  border-radius: 30px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.issue-nav-list .bx-prev:hover {
+  border: 1px solid #3e73ed;
+  background: #3e73ed;
+  color: #fff;
+}
+
+.issue-nav-list .bx-prev.disabled {
+  display: none;
+}
+
+.issue-nav-list .bx-next {
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  z-index: 99;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 21px;
+  font-family: Dotum;
+  color: #d8d8d8;
+  font-weight: 500;
+  border-radius: 30px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.issue-nav-list .bx-next:hover {
+  border: 1px solid #3e73ed;
+  background: #3e73ed;
+  color: #fff;
+}
+
+.issue-nav-list .bx-next.disabled {
+  display: none;
+}
+
+.issue-nav-list .list-w .list {
+  display: block;
+  width: calc(100% / 6);
+  border: 1px solid #d7d7d7;
+  height: 54px;
+  line-height: 52px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  float: left;
+  cursor: pointer;
+  border-right: 0;
+}
+
+.issue-nav-list .list-w .list span {
+  display: block;
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+}
+
+.issue-nav-list .list-w .list:last-child {
+  border-right: 1px solid #d7d7d7;
+}
+
+.issue-nav-list .list-w .list:hover, .issue-nav-list .list-w .list.active {
+  background: #3e73ed;
+  color: #fff;
+  font-weight: 700;
+}
+
+.issue_top {
+  display: block;
+  clear: both;
+}
+
+.issue_top .tit {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.issue_top .txt {
+  display: block;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+  line-height: 30px;
+}
+
+.issue_top .txt a {
+  font-size: 13px;
+  font-weight: 300;
+  color: #3e73ed;
+}
+
+.issue_und {
+  display: block;
+}
+
+.issue_und .chartbox {
+  border: 1px solid #d7d7d7;
+  min-height: 300px;
+}
+
+.issue_und .article_list {
+  display: block;
+  padding: 0 5px;
+}
+
+.issue_und .article_list ul {
+  display: block;
+  width: 100%;
+}
+
+.issue_und .article_list ul li {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.issue_und .article_list ul li a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.issue_und .article_list ul li a:hover .obj {
+  text-decoration: underline;
+}
+
+.issue_und .article_list ul li .obj {
+  display: block;
+  width: 620px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 10px;
+  float: left;
+}
+
+.issue_und .article_list ul li .enp {
+  display: block;
+  width: 210px;
+  float: left;
+  text-align: center;
+}
+
+.issue_und .article_list ul li .date {
+  display: block;
+  width: 118px;
+  float: left;
+  text-align: right;
+  color: #999;
+}
+
+.issue_info {
+  display: block;
+}
+
+.issue_info .tab-content .tab-pane .chartbox {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.issue_info .tab-content .tab-pane .chartbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.issue_info .tab-content .tab-pane .chartbox ul li {
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: 240px;
+  background: #f5f5f5;
+  margin-bottom: 25px;
+}
+
+.issue_info .tab-content .tab-pane .chartbox ul li strong {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.issue_info .tab-content .tab-pane .chartbox ul li .chartImg {
+  display: inline-block;
+  margin-top: 15px;
+  width: 250px;
+  height: 165px;
+  background: #fff;
+}
+
+.issue_info .tab-content .tab-pane .chartbox .date {
+  position: absolute;
+  top: -33px;
+  right: 3px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+
+.issue-analysis .chartbox {
+  display: block;
+  min-height: 300px;
+  background: #f7f7f7;
+}
+
+.latest-issue {
+  position: relative;
+  display: block;
+}
+
+.latest-issue .nav {
+  border: 0;
+}
+
+.latest-issue .nav li {
+  margin: 0;
+}
+
+.latest-issue .nav li a {
+  border: 0;
+  margin: 0;
+  padding: 0 15px;
+  min-width: 70px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  background: #ebebeb;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-weight: 300;
+}
+
+.latest-issue .nav li.active a, .latest-issue .nav li:hover a {
+  background: #3e72ed;
+  color: #fff;
+}
+
+.latest-issue .tab-content ul {
+  display: block;
+}
+
+.latest-issue .tab-content ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.latest-issue .tab-content ul li .tit {
+  display: block;
+}
+
+.latest-issue .tab-content ul li .tit a {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 16px;
+  color: #3e72ed;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #3e72ed;
+}
+
+.latest-issue .tab-content ul li .tit .date {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  line-height: 20px;
+  padding-top: 5px;
+}
+
+.latest-issue .tab-content ul li .txt {
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+  height: 40px;
+}
+
+.latest-issue .more {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.latest-issue .more a {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+.latest-issue .more a::before {
+  content: '+';
+  padding-right: 5px;
+}
+
+.issue-relation .table_w table {
+  overflow: hidden;
+}
+
+.issue-relation .table_w table thead {
+  width: 100%;
+  float: left;
+}
+
+.issue-relation .table_w table thead tr {
+  display: table;
+  width: 100%;
+}
+
+.issue-relation .table_w table tbody {
+  float: left;
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+}
+
+.issue-relation .table_w table tbody tr {
+  display: table;
+  width: 100%;
+}
+
+.empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 800px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.empty.issue-empty p {
+  display: block;
+  width: 100%;
+  line-height: 26px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.empty.issue-empty button {
+  display: block;
+  width: 115px;
+  height: 30px;
+  line-height: 28px;
+  float: none;
+  border: 1px solid #3e72ed;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #3e72ed;
+  padding: 0;
+  margin: 0;
+}
+
+.empty.issue-empty button:hover, .empty.issue-empty button:focus {
+  background: #3e72ed;
+  color: #fff;
+}
+
+.empty.issue-empty button span {
+  padding: 0;
+  margin: 0;
+}

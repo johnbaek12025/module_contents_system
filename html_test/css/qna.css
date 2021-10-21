@@ -1,0 +1,74 @@
+.qna .panel-default {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.qna .panel-default .panel-heading {
+  background: none;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.qna .panel-default .panel-heading .panel-title {
+  padding: 0 0 35px 0;
+}
+
+.qna .panel-default .panel-heading .panel-title a:hover, .qna .panel-default .panel-heading .panel-title a:active, .qna .panel-default .panel-heading .panel-title a:focus {
+  text-decoration: none;
+}
+
+.qna .panel-default .panel-heading .panel-title a[aria-expanded="true"] span {
+  color: #3e72ed;
+}
+
+.qna .panel-default .panel-heading .panel-title a span {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.qna .panel-default .panel-heading .panel-title a span::before {
+  content: 'Q.';
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #3e72ed;
+  font-weight: 700;
+  padding-right: 5px;
+  float: left;
+}
+
+.qna .panel-default .panel-heading .panel-title a span::after {
+  content: ' ';
+  width: 16px;
+  height: 20px;
+  background: url(../img/bu_open.png) no-repeat 0 50%;
+  float: right;
+}
+
+.qna .panel-default .panel-collapse {
+  padding: 0;
+  border-radius: 0;
+}
+
+.qna .panel-default .panel-collapse .panel-body {
+  border: 0;
+  padding: 0 35px 40px;
+  border-radius: 0;
+}
+
+.qna .panel-default .panel-collapse .panel-body span {
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+}
