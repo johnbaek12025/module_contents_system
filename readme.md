@@ -1,4 +1,4 @@
-# Analsis Data Manager
+# module_contents_system
   1. 프로젝트 설명
     
     - 해당 프로젝트는 분석DB에 이벤트가 발생시 모듈 콘텐츠 시스템에서 
