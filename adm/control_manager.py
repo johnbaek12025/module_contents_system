@@ -151,6 +151,7 @@ class ControlManager(object):
         self.check_config(config)
 
     def run(self, test_data=None):
+        # TODO: key interruption 발생시 log에 남길 변수 cur_request 할당 안함.
         self.initialize_oracle_lib_path()
         cur_request = None
         while True:
@@ -163,7 +164,7 @@ class ControlManager(object):
                 if test_data is not None:
                     self.create_contents([test_data])
                     break
-
+                #분석 db에서 해당 모듈을 10개씩 가져옴
                 requests = self.data_db_mgr.get_requests(count=10)
                 self.create_contents(requests)
                 time.sleep(self.sleep_interval)
@@ -258,6 +259,8 @@ class ControlManager(object):
         }
 
     def comparing_info_code(self, r: dict):
+        # 각각의 모듈에 따른 개수만큼 키를 가져온 후 hashmap으로 만듬
+        # 이슈 관련된 모듈은 20개 테마 관련된 모듈은 5개로 늘림
         def make_dict(r, codes):
             x = []
             for name in codes:
@@ -311,6 +314,8 @@ class ControlManager(object):
             return x
 
     def inflate_requests(self, requests: list):
+        # 기존에 모듈에 대해서 1개씩 콘텐츠를 생산하던 것에서
+        # 같은 테마, 이슈에 각각의 요청 개수만큼 콘텐츠 생산을 해야함
         inflated_requests = []
         contents = {
             'thm02', 'thm03', 'thm04', 'iss01', 'iss02', 'iss03', 'iss04',
@@ -327,6 +332,7 @@ class ControlManager(object):
         return inflated_requests
 
     def create_contents(self, requests):
+        # 각 모듈에 대해 생성해야 될 콘텐츠 개수 체크
         requests = self.inflate_requests(requests)
         for r in requests:
             logger.info(

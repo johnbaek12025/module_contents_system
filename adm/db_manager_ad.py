@@ -3,7 +3,7 @@ from adm import remove_empty_between_tag
 from adm.jobs import subject_7254
 from adm.exceptions import ConfigError, ContentsError
 
-
+# 콘텐츠 생성하는 것에 대해 공통적으로 사용하는 query
 class DBManager(adm.db_manager.DBManager):
     def __init__(self):
         pass
@@ -543,6 +543,7 @@ class DBManager(adm.db_manager.DBManager):
         return x
 
     def handle_processed_requests(self, info_seq):
+        # 생성된 콘텐츠에 대한 update
         self.change_requests_status(info_seq)
         self.move_requests()
         self.delete_requests()

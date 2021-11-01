@@ -10,7 +10,7 @@ from adm.jobs.workshop.html_test import save_to_file
 
 logger = logging.getLogger(__name__)
 
-
+# 각 모듈을 관리하는 부모class
 class ADManager(metaclass=ABCMeta):
 
     # sending condition
@@ -20,7 +20,7 @@ class ADManager(metaclass=ABCMeta):
     SC_GONGSI = 4
 
     def __init__(self):
-        self.process_condition = ADManager.SC_CUSTOM
+        self.process_condition = ADManager.SC_CUSTOM # default 상태
 
         # 현재날짜 가져오기
         self.now_datetime = datetime.today().strftime("%Y%m%d%H%M%S")
@@ -177,8 +177,8 @@ class ADManager(metaclass=ABCMeta):
         self.news_info = NewsInfo(**news_info_dict)
 
     def set_news_cnts(self):
+        # child_Class make_news_cnts method 실행
         news_cnts_data = self.make_news_cnts()
-        # news_cnts_data["news_cnts"] += self.add_news_link("")
         news_cnts_dict = {
             "news_seq": self.news_seq,
             "now_date": self.now_date,
@@ -188,6 +188,7 @@ class ADManager(metaclass=ABCMeta):
             "news_code": self.news_code,
             "rep_image": self.rep_image,
         }
+        # 생성된 내용을 print 하기위해 constructor로 보냄
         self.news_cnts = NewsContent(**news_cnts_dict)
 
     def set_news_com(self):
@@ -197,14 +198,14 @@ class ADManager(metaclass=ABCMeta):
             "info_seq": self.info_seq,
             "info_code": self.info_code,
         }
+        # 생성된 내용을 print 하기위해 constructor로 보냄
         self.news_com = NewsCom(**news_com_dict)
 
     def custom_process_condition(self):
         # implement the details in the inherited class.
         return True, {}
 
-    def check_process_condition(self):
-
+    def check_process_condition(self):        
         if self.request_type in ["U", "D"]:
             org_data = self.t_db_mgr.get_original_data(self.info_seq)
             return True, org_data
@@ -274,9 +275,9 @@ class ADManager(metaclass=ABCMeta):
             return False, {}
 
     def create_news(self):
-
+        # child method 실행
         self.set_analysis_target()
-
+        # 모듈별 process_condition 할당
         process_condition, org_data = self.check_process_condition()
 
         if not process_condition:
@@ -289,6 +290,7 @@ class ADManager(metaclass=ABCMeta):
             news_info_data = self.make_news_info()
             news_info_data["news_title"] = self.set_news_title_style(
                 news_info_data["news_title"])
+            # 콘텐츠 module 내용 생성
             self.set_news_cnts()
             self.news_cnts.print()
             save_to_file(f"{self.deal_date}_{self.news_code}_{self.news_seq}",

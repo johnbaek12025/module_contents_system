@@ -15,6 +15,10 @@ class KafkaManager(object):
         self.conn = None
 
     def connect(self, host, port, auto_offset_reset="latest"):
+        # TODO: partition 설정 해줘야 함
+        # acks 1로 설정 하여 처리결과를 return 하도록 설정
+        # 메시지에 대한 압축은 압축률이 높은 gzip을 채택        
+        # value는 utf-8로 설정
         self.uri = f"{host}:{str(port)}"
         logger.info(f"connect to kafka server {self.uri}")
         try:
