@@ -7,7 +7,7 @@
            
   2. 프로젝트 구성도
       
-      ![flow](https://user-images.githubusercontent.com/62003412/137762999-f661b662-8cc1-4b35-af4c-3c59a4ec2902.PNG)
+      
      
 ## ADM 실행 순서
 
