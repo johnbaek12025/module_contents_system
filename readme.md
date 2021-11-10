@@ -11,26 +11,7 @@
 
   3. tree
     
-      ├─adm
-      │  └─jobs
-      │      ├─html
-      │      └─workshop
-      ├─bin
-      ├─examples
-      ├─fonts
-      │  └─arial
-      ├─html_test
-      │  ├─css
-      │  ├─img
-      │  │  ├─header
-      │  │  └─sub
-      │  │      ├─board
-      │  │      ├─bot
-      │  │      ├─btn
-      │  │      └─item
-      │  │          └─rmd
-      │  └─js
-      └─tests
+    ![image](https://user-images.githubusercontent.com/62003412/141070562-1e7761bb-c809-4baa-baf2-d9e5730e2ad6.png)
     
     
 ## ADM 실행 순서
