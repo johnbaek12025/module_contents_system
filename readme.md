@@ -9,6 +9,27 @@
       
       ![flow2](https://user-images.githubusercontent.com/62003412/139821513-5c7f7335-6164-4277-ac7d-91e361095ec5.PNG)
 
+  3. tree
+      ├─adm
+      │  └─jobs
+      │      ├─html
+      │      └─workshop
+      ├─bin
+      ├─examples
+      ├─fonts
+      │  └─arial
+      ├─html_test
+      │  ├─css
+      │  ├─img
+      │  │  ├─header
+      │  │  └─sub
+      │  │      ├─board
+      │  │      ├─bot
+      │  │      ├─btn
+      │  │      └─item
+      │  │          └─rmd
+      │  └─js
+      └─tests
      
 ## ADM 실행 순서
 
