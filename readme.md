@@ -9,10 +9,6 @@
       
       ![flow2](https://user-images.githubusercontent.com/62003412/139821513-5c7f7335-6164-4277-ac7d-91e361095ec5.PNG)
 
-  3. tree
-    
-    <img width="134" alt="tree" src="https://user-images.githubusercontent.com/62003412/141070670-0f91f05f-9292-470b-9ca5-eae26efc71db.PNG">
-    
     
 ## ADM 실행 순서
 
