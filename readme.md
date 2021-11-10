@@ -11,7 +11,7 @@
 
   3. tree
     
-    ![image](https://user-images.githubusercontent.com/62003412/141070562-1e7761bb-c809-4baa-baf2-d9e5730e2ad6.png)
+    <img width="134" alt="tree" src="https://user-images.githubusercontent.com/62003412/141070670-0f91f05f-9292-470b-9ca5-eae26efc71db.PNG">
     
     
 ## ADM 실행 순서
